@@ -44,6 +44,7 @@ public class Admin extends javax.swing.JFrame {
         Label_AdminLogin_Admin = new javax.swing.JLabel();
         Admin_Pass = new javax.swing.JPasswordField();
         Button_Back_Admin = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -62,7 +63,6 @@ public class Admin extends javax.swing.JFrame {
         Label_Pass_Admin.setText("PASSWORD");
 
         Label_Logo_Admin.setFont(new java.awt.Font("Zapfino", 1, 36)); // NOI18N
-        Label_Logo_Admin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screenshot (64).png"))); // NOI18N
 
         Label_AdminLogin_Admin.setFont(new java.awt.Font("STIX Two Text", 1, 18)); // NOI18N
         Label_AdminLogin_Admin.setText("ADMIN LOGIN");
@@ -81,15 +81,15 @@ public class Admin extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Screenshot (64).png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(365, 365, 365)
-                        .addComponent(Label_AdminLogin_Admin))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(313, 313, 313)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,25 +102,33 @@ public class Admin extends javax.swing.JFrame {
                                 .addComponent(Admin_Pass, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(92, 92, 92)
-                        .addComponent(Label_Logo_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(113, Short.MAX_VALUE))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Label_Logo_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(123, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Label_AdminLogin_Admin)
+                .addGap(375, 375, 375))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Label_Logo_Admin)
-                .addGap(24, 24, 24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Label_AdminLogin_Admin)
-                .addGap(38, 38, 38)
+                .addGap(12, 12, 12)
                 .addComponent(Label_Pass_Admin)
-                .addGap(18, 18, 18)
+                .addGap(35, 35, 35)
                 .addComponent(Admin_Pass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(41, 41, 41)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Button_Login_Admin)
-                    .addComponent(Button_Back_Admin))
-                .addContainerGap(313, Short.MAX_VALUE))
+                    .addComponent(Button_Back_Admin)
+                    .addComponent(Button_Login_Admin))
+                .addContainerGap(256, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel2);
@@ -215,6 +223,7 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JLabel Label_AdminLogin_Admin;
     private javax.swing.JLabel Label_Logo_Admin;
     private javax.swing.JLabel Label_Pass_Admin;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
